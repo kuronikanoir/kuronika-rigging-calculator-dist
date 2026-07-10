@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <!-- CSS Stylesheet -->
-  <script type="module" crossorigin src="./index.BYIxpb2N.js"></script>
+  <script type="module" crossorigin src="./index.C_K09uxb.js"></script>
   <link rel="stylesheet" crossorigin href="./index.Gz3Lmqoz.css">
 </head>
 <body class="dark-theme">
@@ -53,6 +53,13 @@
       <div class="workspace-left">
         <!-- Base Packages -->
         <section class="packages-section card-wrapper">
+          <div class="section-title-bar">
+            <h3 data-i18n="select_base_package">1. Select Base Package</h3>
+            <div class="last-modified-wrapper" style="display: flex; align-items: center; gap: 4px; font-size: 0.85rem; opacity: 0.75;">
+              <span data-i18n="last_modified">Last Modified:</span>
+              <span id="last-modified-date"></span>
+            </div>
+          </div>
           <div class="packages-grid" id="packages-container">
             <!-- Dynamically populated package cards -->
             <div class="skeleton-card"></div>
@@ -143,10 +150,6 @@
   <footer class="app-footer-bar">
     <div class="footer-bar-container">
       <p id="footer-text">&copy; 2026 Kuronika Noir. All rights reserved</p>
-      <p id="last-modified" style="font-size: 0.8rem; opacity: 0.7;">
-        <span data-i18n="last_modified">Last Modified:</span>
-        <span id="last-modified-date"></span>
-      </p>
     </div>
   </footer>
 
