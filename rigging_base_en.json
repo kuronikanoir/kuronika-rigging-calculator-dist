@@ -1,0 +1,18 @@
+{
+  "serviceName": "Kuronika L2D Rigging Service",
+  "currency": "USD",
+  "currencySymbol": "$",
+  "artistName": "Kuronika Noir",
+  "contact": "Discord: Kuronika_noir",
+  "lastModified": "10-July-2026",
+  "linkToNotion": "",
+  "basePackages": [
+    {
+      "id": "basic_rigging",
+      "name": "Basic Rigging",
+      "price": 900,
+      "description": "Refer to Notion for more details"
+    }
+  ],
+  "footer": "2026 Kuronika Noir. All rights reserved"
+}

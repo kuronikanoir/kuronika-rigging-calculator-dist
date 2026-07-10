@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kuronika Rigging Calculator</title>
+  <title data-i18n="page_title">Kuronika Rigging Calculator</title>
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,15 +24,18 @@
         <span class="logo-icon">✨</span>
         <div class="logo-text">
           <h1 id="service-title">Kuronika Rigging Calculator</h1>
-          <span class="logo-subtitle">Live2D Rigging Estimate Generator</span>
+          <span class="logo-subtitle" data-i18n="logo_subtitle">Live2D Rigging Estimate Generator</span>
         </div>
       </div>
       <div class="header-actions">
-        <button id="theme-toggle" class="btn btn-secondary-icon" title="Toggle Theme">
+        <select id="language-select" class="btn btn-secondary" title="Select Language" data-i18n-title="select_language_title">
+          <!-- Options will be dynamically populated from i18n.json -->
+        </select>
+        <button id="theme-toggle" class="btn btn-secondary-icon" title="Toggle Theme" data-i18n-title="toggle_theme_title">
           <span class="sun-icon">☀️</span>
           <span class="moon-icon">🌙</span>
         </button>
-        <button id="reset-calculator" class="btn btn-secondary" title="Reset all inputs">Reset</button>
+        <button id="reset-calculator" class="btn btn-secondary" title="Reset all inputs" data-i18n="reset_button">Reset</button>
       </div>
     </div>
   </header>
@@ -53,9 +56,9 @@
         <!-- Additional Features -->
         <section class="features-section card glass">
           <div class="section-title-bar">
-            <h3>2. Customize Additional Features</h3>
+            <h3 data-i18n="customize_additional_features">2. Customize Additional Features</h3>
             <div class="search-box">
-              <input type="text" id="feature-search" placeholder="Search features...">
+              <input type="text" id="feature-search" placeholder="Search features..." data-i18n-placeholder="search_features_placeholder">
               <span class="search-icon">🔍</span>
             </div>
           </div>
@@ -64,17 +67,17 @@
             <table class="features-table">
               <thead>
                 <tr>
-                  <th>Feature</th>
-                  <th>Base Price</th>
-                  <th>Notes</th>
-                  <th class="col-quantity">Quantity</th>
-                  <th class="col-total">Line Total</th>
+                  <th data-i18n="table_feature">Feature</th>
+                  <th data-i18n="table_base_price">Base Price</th>
+                  <th data-i18n="table_notes">Notes</th>
+                  <th class="col-quantity" data-i18n="table_quantity">Quantity</th>
+                  <th class="col-total" data-i18n="table_line_total">Line Total</th>
                 </tr>
               </thead>
               <tbody id="features-tbody">
                 <!-- Dynamically populated rows -->
                 <tr>
-                  <td colspan="5" class="table-loading">Loading features...</td>
+                  <td colspan="5" class="table-loading" data-i18n="loading_features">Loading features...</td>
                 </tr>
               </tbody>
             </table>
@@ -86,37 +89,37 @@
       <aside class="workspace-right">
         <div class="summary-card card glass sticky">
           <div class="summary-header">
-            <h3>Estimate Receipt</h3>
+            <h3 data-i18n="estimate_receipt">Estimate Receipt</h3>
           </div>
 
           <div class="summary-bill">
             <div class="bill-row">
-              <span class="label">Base Rigging Tier</span>
+              <span class="label" data-i18n="rigging_tier">Rigging Tier</span>
               <span class="value font-weight-bold" id="bill-base-package">None Selected</span>
             </div>
             <div class="bill-row-sub" id="bill-base-desc">-</div>
             <div class="bill-row indent">
-              <span class="label">Base Price</span>
+              <span class="label" data-i18n="base_price">Base Price</span>
               <span class="value" id="bill-base-price">$0.00</span>
             </div>
 
             <hr class="bill-divider">
 
             <div class="bill-row">
-              <span class="label">Add-ons Subtotal</span>
+              <span class="label" data-i18n="addons_subtotal">Add-ons Subtotal</span>
               <span class="value" id="bill-features-subtotal">$0.00</span>
             </div>
             
             <!-- List of selected add-ons -->
             <div class="bill-addons-list" id="bill-addons-list">
               <!-- Dynamically populated selected add-ons overview -->
-              <span class="empty-list-text">No add-ons selected</span>
+              <span class="empty-list-text" data-i18n="no_addons_selected">No add-ons selected</span>
             </div>
 
             <hr class="bill-divider">
 
             <div class="bill-row font-md">
-              <span class="label">Gross Subtotal</span>
+              <span class="label" data-i18n="gross_subtotal">Gross Subtotal</span>
               <span class="value" id="bill-gross-subtotal">$0.00</span>
             </div>
         </div>
@@ -126,7 +129,7 @@
 
   <footer class="app-footer-bar">
     <div class="footer-bar-container">
-      <p>&copy; 2026 Kuronika Noir. All rights reserved.</p>
+      <p id="footer-text">&copy; 2026 Kuronika Noir. All rights reserved.</p>
     </div>
   </footer>
 

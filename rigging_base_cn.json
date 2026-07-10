@@ -1,0 +1,18 @@
+{
+  "serviceName": "Kuronika L2D 建模服務",
+  "currency": "美金",
+  "currencySymbol": "$",
+  "artistName": "Kuronika Noir",
+  "contact": "Discord：Kuronika_noir",
+  "lastModified": "2026年7月10日",
+  "linkToNotion": "",
+  "basePackages": [
+    {
+      "id": "basic_rigging",
+      "name": "基礎建模",
+      "price": 900,
+      "description": "更多詳情請參閱 Notion"
+    }
+  ],
+  "footer": "2026 Kuronika Noir. 版權所有。"
+}
