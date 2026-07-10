@@ -1,17 +1,17 @@
-feature,price,notes,max count
-Simple Expression,$10,,10
-Animated Expression,$30+,Varies depending on complexity,10
-Simple Animation,$70+,Varies depending on complexity,10
-Performance-based Animation,$150+,Varies depending on complexity,10
-Complicated Tail / Wings,$150+,Varies depending on complexity,10
-Horns / Tails / Wings / Ears,$50,,10
-Additional Layer of Costume,$300+,"With Toggle, Varies depending on complexity",2
-Additional Hair Style,$100,,3
-Simple Hand Expression,$50,,7
-Advanced Hand Expression,$200,Capped at 3 additions,3
-Lean Forward,$150,Used in Animation Only,1
-Lean Forward,$300+,"Fully Tracked, Varies depending on complexity",1
-Chibi Form,$150+,Varies depending on complexity,1
-Special Effect,$30,Required Pre-drawn PSD Assets,10
-Additional Toggle on Existing Item,$10,,10
-Pet / Item (i.e. Microphone),$100+,"Required Pre-drawn PSD Assets, Varies depending on complexity",5
+id,feature,price,notes,max count,group
+0,Simple Expression,$10,,10,
+1,Animated Expression,$30+,Varies depending on complexity,10,
+2,Simple Animation,$70+,Varies depending on complexity,10,
+3,Performance-based Animation,$150+,Varies depending on complexity,10,
+4,Complicated Tail / Wings,$150+,Varies depending on complexity,10,
+5,Horns / Tails / Wings / Ears,$50,,10,
+6,Additional Layer of Costume,$300+,"With Toggle, Varies depending on complexity",2,
+7,Additional Hair Style,$100,,3,
+8,Simple Hand Expression,$50,,7,
+9,Advanced Hand Expression,$200,Capped at 3 additions,3,
+10,Lean Forward,$150,Used in Animation Only,1,lean
+11,Lean Forward,$300+,"Fully Tracked, Varies depending on complexity",1,lean
+12,Chibi Form,$150+,Varies depending on complexity,1,
+13,Special Effect,$30,Required Pre-drawn PSD Assets,10,
+14,Additional Toggle on Existing Item,$10,,10,
+15,Pet / Item (i.e. Microphone),$100+,"Required Pre-drawn PSD Assets, Varies depending on complexity",5,

@@ -11,7 +11,19 @@
       "id": "basic_rigging",
       "name": "基礎建模",
       "price": 900,
-      "description": "更多詳情請參閱 Notion"
+      "description": "更多詳情請參閱 Notion",
+      "includedFeatures": [
+        {
+          "id": 0,
+          "quantity": 2,
+          "included": true
+        },
+        {
+          "id": 1,
+          "quantity": 2,
+          "included": true
+        }
+      ]
     }
   ],
   "footer": "2026 Kuronika Noir. 版權所有。"

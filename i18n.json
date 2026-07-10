@@ -1,6 +1,7 @@
 {
   "i18n": [
     { "lang": "en", "text": "EN" },
-    { "lang": "cn", "text": "中文" }
+    { "lang": "tc", "text": "繁體" },
+    { "lang": "sc", "text": "简體" }
   ]
 }

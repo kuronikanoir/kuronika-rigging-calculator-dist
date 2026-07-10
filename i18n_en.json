@@ -1,5 +1,5 @@
 {
-  "page_title": "Kuronika Rigging Calculator",
+  "page_title": "{artistName} Rigging Calculator",
   "logo_subtitle": "Live2D Rigging Estimate Generator",
   "link_text": "Link",
   "sns_text": "SNS",
@@ -9,6 +9,7 @@
   "toggle_theme_title": "Toggle Theme",
   "reset_button": "Reset",
   "customize_additional_features": "Customize Additional Features",
+  "show_selected_only": "Selected only",
   "search_features_placeholder": "Search features...",
   "table_feature": "Feature",
   "table_base_price": "Base Price ({currency})",
@@ -23,6 +24,8 @@
   "base_price": "Base Price ({currency})",
   "addons_subtotal": "Add-ons Subtotal ({currency})",
   "no_addons_selected": "No add-ons selected",
+  "included_addons_label": "Included Add-ons",
+  "package_included_label": "(Package included)",
   "gross_subtotal": "Gross Subtotal ({currency})",
   "toast_reset_calculator": "Calculator has been reset to defaults.",
   "toast_switched_light": "Switched to Light Mode",

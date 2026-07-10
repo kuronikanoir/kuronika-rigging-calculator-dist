@@ -9,8 +9,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <!-- CSS Stylesheet -->
-  <script type="module" crossorigin src="./index.C_K09uxb.js"></script>
-  <link rel="stylesheet" crossorigin href="./index.Gz3Lmqoz.css">
+  <script type="module" crossorigin src="./index.pgCd2Jof.js"></script>
+  <link rel="stylesheet" crossorigin href="./index.BJEe31qd.css">
 </head>
 <body class="dark-theme">
   <!-- Decorative Glow Blobs -->
@@ -75,6 +75,10 @@
                 <input type="text" id="feature-search" placeholder="Search features..." data-i18n-placeholder="search_features_placeholder">
                 <span class="search-icon">🔍</span>
               </div>
+              <label class="selected-toggle" data-i18n-title="show_selected_only" title="Selected only">
+                <input type="checkbox" id="selected-toggle-input">
+                <span data-i18n="show_selected_only">Selected only</span>
+              </label>
               <button id="features-collapse-btn" class="btn btn-secondary btn-icon" aria-label="Toggle features section" title="Toggle features section">
                 ▼
               </button>
@@ -121,6 +125,17 @@
             <div class="bill-row indent">
               <span class="label" data-i18n="base_price">Base Price</span>
               <span class="value" id="bill-base-price">$0.00</span>
+            </div>
+
+
+            <!-- Included (free) add-ons section -->
+            <div class="bill-included-section" id="bill-included-section" style="display: none;">
+              <hr class="bill-divider">
+              
+              <div class="bill-row">
+                <span class="label" data-i18n="included_addons_label">Included Add-ons</span>
+              </div>
+              <div class="bill-addons-list" id="bill-included-list"></div>
             </div>
 
             <hr class="bill-divider">

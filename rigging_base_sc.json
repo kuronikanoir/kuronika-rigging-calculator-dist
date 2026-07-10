@@ -1,17 +1,17 @@
 {
-  "serviceName": "Kuronika L2D Rigging Service",
-  "currency": "USD",
+  "serviceName": "Kuronika L2D 建模服务",
+  "currency": "美元",
   "currencySymbol": "$",
   "artistName": "Kuronika Noir",
-  "contact": "Discord: Kuronika_noir",
+  "contact": "Discord：Kuronika_noir",
   "sns": "https://x.com/KuronikaNoir",
   "link": "https://app.notion.com/p/Kuronika-Noir-3a9d77633c9083aea1aa81fcce8c47d1",
   "basePackages": [
     {
       "id": "basic_rigging",
-      "name": "Basic Rigging",
+      "name": "基础建模",
       "price": 900,
-      "description": "Refer to Notion for more details\nLink on top right of the page",
+      "description": "更多详情请参阅 Notion",
       "includedFeatures": [
         {
           "id": 0,
@@ -21,10 +21,10 @@
         {
           "id": 1,
           "quantity": 2,
-          "disabled": true
+          "included": true
         }
       ]
     }
   ],
-  "footer": "2026 Kuronika Noir. All rights reserved"
+  "footer": "2026 Kuronika Noir. 版权所有。"
 }
