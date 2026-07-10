@@ -1,0 +1,11 @@
+{
+ "serviceName": "Kuronika Rigging Service",
+ "currency": "USD",
+ "currencySymbol": "$",
+ "artistName": "Kuronika Noir",
+ "contact": "Discord: Kuronika_noir",
+ "linkToNotion": "",
+ "basePackages": [
+   { "id": "basic_rigging", "name": "Basic Rigging", "price": 900, "description": "Refer to Notion for more details" }
+   ]
+}

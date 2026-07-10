@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kuronika Rigging Calculator</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <!-- CSS Stylesheet -->
+  <script type="module" crossorigin src="./index.js"></script>
+  <link rel="stylesheet" crossorigin href="./index.css">
+</head>
+<body class="dark-theme">
+  <!-- Decorative Glow Blobs -->
+  <div class="glow-blob glow-1"></div>
+  <div class="glow-blob glow-2"></div>
+  <div class="glow-blob glow-3"></div>
+
+  <header class="app-header">
+    <div class="header-container">
+      <div class="logo-area">
+        <span class="logo-icon">✨</span>
+        <div class="logo-text">
+          <h1 id="service-title">Kuronika Rigging Calculator</h1>
+          <span class="logo-subtitle">Live2D Rigging Estimate Generator</span>
+        </div>
+      </div>
+      <div class="header-actions">
+        <button id="theme-toggle" class="btn btn-secondary-icon" title="Toggle Theme">
+          <span class="sun-icon">☀️</span>
+          <span class="moon-icon">🌙</span>
+        </button>
+        <button id="reset-calculator" class="btn btn-secondary" title="Reset all inputs">Reset</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="app-container">
+    <!-- Main Workspace -->
+    <div class="workspace-grid">
+      <!-- Left Column: Core Pricing Selection & Features -->
+      <div class="workspace-left">
+        <!-- Base Packages -->
+        <section class="packages-section card-wrapper">
+          <div class="packages-grid" id="packages-container">
+            <!-- Dynamically populated package cards -->
+            <div class="skeleton-card"></div>
+          </div>
+        </section>
+
+        <!-- Additional Features -->
+        <section class="features-section card glass">
+          <div class="section-title-bar">
+            <h3>2. Customize Additional Features</h3>
+            <div class="search-box">
+              <input type="text" id="feature-search" placeholder="Search features...">
+              <span class="search-icon">🔍</span>
+            </div>
+          </div>
+          
+          <div class="table-container">
+            <table class="features-table">
+              <thead>
+                <tr>
+                  <th>Feature</th>
+                  <th>Base Price</th>
+                  <th>Notes</th>
+                  <th class="col-quantity">Quantity</th>
+                  <th class="col-total">Line Total</th>
+                </tr>
+              </thead>
+              <tbody id="features-tbody">
+                <!-- Dynamically populated rows -->
+                <tr>
+                  <td colspan="5" class="table-loading">Loading features...</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+      </div>
+
+      <!-- Right Column: Live Estimate summary (Sticky) -->
+      <aside class="workspace-right">
+        <div class="summary-card card glass sticky">
+          <div class="summary-header">
+            <h3>Estimate Receipt</h3>
+          </div>
+
+          <div class="summary-bill">
+            <div class="bill-row">
+              <span class="label">Base Rigging Tier</span>
+              <span class="value font-weight-bold" id="bill-base-package">None Selected</span>
+            </div>
+            <div class="bill-row-sub" id="bill-base-desc">-</div>
+            <div class="bill-row indent">
+              <span class="label">Base Price</span>
+              <span class="value" id="bill-base-price">$0.00</span>
+            </div>
+
+            <hr class="bill-divider">
+
+            <div class="bill-row">
+              <span class="label">Add-ons Subtotal</span>
+              <span class="value" id="bill-features-subtotal">$0.00</span>
+            </div>
+            
+            <!-- List of selected add-ons -->
+            <div class="bill-addons-list" id="bill-addons-list">
+              <!-- Dynamically populated selected add-ons overview -->
+              <span class="empty-list-text">No add-ons selected</span>
+            </div>
+
+            <hr class="bill-divider">
+
+            <div class="bill-row font-md">
+              <span class="label">Gross Subtotal</span>
+              <span class="value" id="bill-gross-subtotal">$0.00</span>
+            </div>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="app-footer-bar">
+    <div class="footer-bar-container">
+      <p>&copy; 2026 Kuronika Noir. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+</body>
+</html>
