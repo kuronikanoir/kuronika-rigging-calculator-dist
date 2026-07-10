@@ -5,7 +5,8 @@
   "artistName": "Kuronika Noir",
   "contact": "Discord：Kuronika_noir",
   "lastModified": "2026年7月10日",
-  "linkToNotion": "",
+  "sns": "https://x.com/KuronikaNoir",
+  "link": "https://app.notion.com/p/Kuronika-Noir-3a9d77633c9083aea1aa81fcce8c47d1",
   "basePackages": [
     {
       "id": "basic_rigging",

@@ -1,6 +1,9 @@
 {
   "page_title": "Kuronika Rigging Calculator",
   "logo_subtitle": "Live2D Rigging Estimate Generator",
+  "link_text": "Link",
+  "sns_text": "SNS",
+  "last_modified": "Last Modified:",
   "select_language_title": "Select Language",
   "toggle_theme_title": "Toggle Theme",
   "reset_button": "Reset",

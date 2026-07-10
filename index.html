@@ -9,8 +9,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <!-- CSS Stylesheet -->
-  <script type="module" crossorigin src="./index.BBgx-JSA.js"></script>
-  <link rel="stylesheet" crossorigin href="./index.CYEaoow5.css">
+  <script type="module" crossorigin src="./index.BYIxpb2N.js"></script>
+  <link rel="stylesheet" crossorigin href="./index.Gz3Lmqoz.css">
 </head>
 <body class="dark-theme">
   <!-- Decorative Glow Blobs -->
@@ -31,6 +31,12 @@
         <select id="language-select" class="btn btn-secondary" title="Select Language" data-i18n-title="select_language_title">
           <!-- Options will be dynamically populated from i18n.json -->
         </select>
+        <a id="link-btn" href="#" target="_blank" class="btn btn-secondary btn-icon" title="Link" data-i18n-title="link_text" style="display: none;">
+          🔗
+        </a>
+        <a id="sns-btn" href="#" target="_blank" class="btn btn-secondary btn-icon" title="SNS" data-i18n-title="sns_text" style="display: none;">
+          💬
+        </a>
         <button id="theme-toggle" class="btn btn-secondary-icon" title="Toggle Theme" data-i18n-title="toggle_theme_title">
           <span class="sun-icon">☀️</span>
           <span class="moon-icon">🌙</span>
@@ -57,30 +63,37 @@
         <section class="features-section card glass">
           <div class="section-title-bar">
             <h3 data-i18n="customize_additional_features">2. Customize Additional Features</h3>
-            <div class="search-box">
-              <input type="text" id="feature-search" placeholder="Search features..." data-i18n-placeholder="search_features_placeholder">
-              <span class="search-icon">🔍</span>
+            <div style="display: flex; align-items: center; gap: 12px;">
+              <div class="search-box">
+                <input type="text" id="feature-search" placeholder="Search features..." data-i18n-placeholder="search_features_placeholder">
+                <span class="search-icon">🔍</span>
+              </div>
+              <button id="features-collapse-btn" class="btn btn-secondary btn-icon" aria-label="Toggle features section" title="Toggle features section">
+                ▼
+              </button>
             </div>
           </div>
           
-          <div class="table-container">
-            <table class="features-table">
-              <thead>
-                <tr>
-                  <th data-i18n="table_feature">Feature</th>
-                  <th data-i18n="table_base_price">Base Price</th>
-                  <th data-i18n="table_notes">Notes</th>
-                  <th class="col-quantity" data-i18n="table_quantity">Quantity</th>
-                  <th class="col-total" data-i18n="table_line_total">Line Total</th>
-                </tr>
-              </thead>
-              <tbody id="features-tbody">
-                <!-- Dynamically populated rows -->
-                <tr>
-                  <td colspan="5" class="table-loading" data-i18n="loading_features">Loading features...</td>
-                </tr>
-              </tbody>
-            </table>
+          <div class="features-content">
+            <div class="table-container">
+              <table class="features-table">
+                <thead>
+                  <tr>
+                    <th data-i18n="table_feature">Feature</th>
+                    <th data-i18n="table_base_price">Base Price</th>
+                    <th data-i18n="table_notes">Notes</th>
+                    <th class="col-quantity" data-i18n="table_quantity">Quantity</th>
+                    <th class="col-total" data-i18n="table_line_total">Line Total</th>
+                  </tr>
+                </thead>
+                <tbody id="features-tbody">
+                  <!-- Dynamically populated rows -->
+                  <tr>
+                    <td colspan="5" class="table-loading" data-i18n="loading_features">Loading features...</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
           </div>
         </section>
       </div>
@@ -129,9 +142,17 @@
 
   <footer class="app-footer-bar">
     <div class="footer-bar-container">
-      <p id="footer-text">&copy; 2026 Kuronika Noir. All rights reserved.</p>
+      <p id="footer-text">&copy; 2026 Kuronika Noir. All rights reserved</p>
+      <p id="last-modified" style="font-size: 0.8rem; opacity: 0.7;">
+        <span data-i18n="last_modified">Last Modified:</span>
+        <span id="last-modified-date"></span>
+      </p>
     </div>
   </footer>
+
+  <button id="back-to-top" class="back-to-top" title="Back to top" aria-label="Back to top">
+    ↑
+  </button>
 
   <!-- Scripts -->
 </body>

@@ -1,6 +1,9 @@
 {
   "page_title": "Kuronika 绑定计算器",
   "logo_subtitle": "Live2D 报价生成器",
+  "link_text": "链接",
+  "sns_text": "社交平台",
+  "last_modified": "最后更新:",
   "select_language_title": "选择语言",
   "toggle_theme_title": "切换主题",
   "reset_button": "重置",
