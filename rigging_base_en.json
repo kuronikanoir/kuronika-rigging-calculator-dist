@@ -12,18 +12,7 @@
       "name": "Basic Rigging",
       "price": 900,
       "description": "Refer to Notion for more details\nLink on top right of the page",
-      "includedFeatures": [
-        {
-          "id": 0,
-          "quantity": 2,
-          "included": true
-        },
-        {
-          "id": 1,
-          "quantity": 2,
-          "disabled": true
-        }
-      ]
+      "includedFeatures": []
     }
   ],
   "footer": "2026 Kuronika Noir. All rights reserved"

@@ -12,18 +12,7 @@
       "name": "基础建模",
       "price": 900,
       "description": "更多详情请参阅 Notion",
-      "includedFeatures": [
-        {
-          "id": 0,
-          "quantity": 2,
-          "included": true
-        },
-        {
-          "id": 1,
-          "quantity": 2,
-          "included": true
-        }
-      ]
+      "includedFeatures": []
     }
   ],
   "footer": "2026 Kuronika Noir. 版权所有。"
