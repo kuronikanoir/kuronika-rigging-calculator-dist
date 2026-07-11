@@ -1,0 +1,19 @@
+{
+  "serviceName": "Kuronika L2D 리깅 서비스",
+  "currency": "USD",
+  "currencySymbol": "$",
+  "artistName": "Kuronika Noir",
+  "contact": "Discord：Kuronika_noir",
+  "sns": "https://x.com/KuronikaNoir",
+  "link": "https://app.notion.com/p/Kuronika-Noir-3a9d77633c9083aea1aa81fcce8c47d1",
+  "basePackages": [
+    {
+      "id": "basic_rigging",
+      "name": "기본 리깅",
+      "price": 900,
+      "description": "자세한 내용은 Notion을 참조하세요",
+      "includedFeatures": []
+    }
+  ],
+  "footer": "2026 Kuronika Noir. All rights reserved."
+}
